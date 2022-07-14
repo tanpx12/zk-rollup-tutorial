@@ -14,16 +14,18 @@
   
   In this example, we will create a simple circuit that take two number **a** and **b** as inputs, multiply them together and assign the result to an output number **c**. The purpose of this example is to prove that someone knows 2 number **a** and **b** without reveal the value of it.  
   First, we have the circuit:   
-  `pragma circom 2.0.0;`
-  `template Mutiplier(){`
-    `signal input a;`  
-    `signal input b;`  
-    `signal output c;`  
+  `````
+  pragma circom 2.0.0;
+   template Mutiplier(){
+    signal input a;
+    signal input b;
+    signal output c;
     
-    `c <== a * b;`  
-  `}`
+    c <== a * b;  
+  }
   
-  `component main = Multiplier();`
+  component main = Multiplier();
+  `````
 
   After finishing the circuit, we will come to `input.json`. Here we assign the value 9 for a and 7 for b (you can choose any value you like).
   `{"a": "9", "b": "7"}`
