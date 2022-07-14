@@ -35,7 +35,7 @@
   To compile the circuit use : 
   `circom circuit.circom --wasm --r1cs --json`
   
-  You will see 2 new file which is `circuit.r1cs` and `circuit_constraints.json` and a new folder `circuit_js`(for further convenient, you should copy all the file in this folder to the parent folder which is the folder that contain the `verify-simple-circuit` folder).
+  You will see 2 new file which is `circuit.r1cs` and `circuit_constraints.json` and a new folder `circuit_js`(for further convenient, you should copy all the file in this folder to the parent folder which is the `verify-simple-circuit` folder).
   
   After that run `snarkjs calculatewitness` to create witness.  
   
