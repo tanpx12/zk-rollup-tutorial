@@ -10,7 +10,7 @@
  \\ Techfi article  
 - Without further ado let's build some zk Rollup :D  
 ## 1. Verify a simple circuit  
-  In case you forgot a little bit about circom and what is it for, this example will remind you about that and also show you how to combine **zkutil, circom** and **snarkjs** to create a circuit and verify it.  
+  In case you forgot a little bit about circom and what is it for, this example will remind you about that and also show you how to combine `zkutil`, `circom` and `snarkjs` to create a circuit and verify it.  
   
   In this example, we will create a simple circuit that take two number **a** and **b** as inputs, multiply them together and assign the result to an output number **c**. The purpose of this example is to prove that someone knows 2 number **a** and **b** without reveal the value of it.  
   First, we have the circuit:   
