@@ -15,16 +15,16 @@
   First, we have the circuit: 
   `pragma circom 2.0.0;
   
-  template Mutiplier(){
-    signal input a;
-    signal input b;
-    signal output c;
+  `template Mutiplier(){
+    `signal input a;
+    `signal input b;
+    `signal output c;
     
     c <== a * b;
-  }
+  ``}
   
-  component main = Multiplier();
-  `
+  `component main = Multiplier();
+
   After finishing the circuit, we will come to `input.json`. Here we assign the value 9 for a and 7 for b (you can choose any value you like).
   `{"a": "9", "b": "7"}`
   With the circuit and the input being done, let's come to the next part where we compile the circuit, create the proof and verify it.
@@ -41,3 +41,4 @@
 ## 2. Verify an EdDSA address
 
 ## 3. Verify a Merkle tree of accounts
+
