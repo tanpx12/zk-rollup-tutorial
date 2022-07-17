@@ -50,7 +50,6 @@
    If you want to generate a solidity smart contract to verify the proof on the blockchain, run. `zkutil generate-verifier`. This should create a `verifier.sol` file, which you can deploy to any EVM blockchain.
   
 ## 2. Verify an EdDSA signature
-
     To begin this part, you should have a clear view of what `circom` is and how to use it.
     EdDSA is a popular signature scheme that is widely used in zk rollup. So, in this part, we will learn how to verify an EdDSA signature using `circom` and its 
 
