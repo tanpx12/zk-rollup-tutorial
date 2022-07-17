@@ -5,12 +5,13 @@
 - In order to run this tutorial, you need to install these following tools:
   * zkutil 
   * circom
-  * snarkjs
+  * snarkjs 
+- After install these tools, run `npm install` to install the library that we use in this tutorial ( make sure that you have `nodejs` installed ).  
 - We also assume that you have some basic knowledge about zero knowledge and cryptography. If you don't, check out these articles about zero knowledge:  
  \\ Techfi article  
-- Without further ado let's build some zk Rollup :D  
+
 ## 1. Verify a simple circuit  
-  In case you forgot a little bit about circom and what is it for, this example will remind you about that and also show you how to combine `zkutil`, `circom` and `snarkjs` to create a circuit and verify it.  
+  In case you forgot a little bit about circom and what is it for, this example will remind you about that and also show you how to combine `zkutil`, `circom` and `snarkjs` to create a circuit and verify it. If you already familiar with `circom`, `snarkjs` and `zkutil` then you can skip this part.
   
   In this example, we will create a simple circuit that take two number **a** and **b** as inputs, multiply them together and assign the result to an output number **c**. The purpose of this example is to prove that someone knows 2 number **a** and **b** without reveal the value of it.  
   First, we have the circuit:   
@@ -48,7 +49,10 @@
   
    If you want to generate a solidity smart contract to verify the proof on the blockchain, run. `zkutil generate-verifier`. This should create a `verifier.sol` file, which you can deploy to any EVM blockchain.
   
-## 2. Verify an EdDSA address
+## 2. Verify an EdDSA signature
+
+    To begin this part, you should have a clear view of what `circom` is and how to use it.
+    EdDSA is a popular signature scheme that is widely used in zk rollup. So, in this part, we will learn how to verify an EdDSA signature using `circom` and its 
 
 ## 3. Verify a Merkle tree of accounts
 
