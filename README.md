@@ -395,6 +395,7 @@ template ProcessTx(k){
 ```
 
 **Step 6: Credit receiver's account**
+
 We need to update the receiver's account balance with the amount sent by sender. Also create a new leaf hash for updated account.
 
 ```
@@ -413,6 +414,7 @@ template ProcessTx(k){
 ```
 
 **Step 7: Update accounts root with the receiver's updated leaf**
+
 
 ```
 template ProcessTx(k){
