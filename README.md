@@ -167,7 +167,7 @@ component main = LeafExistence(2);
 ## 4. Verify a single transaction
 
 All state in a rollup chain is stored in a tree, whose root is kept on chain and can only be changed by submitting a snark proof which certifies valid state transitions off chain. For this tutorial, since we are doing ERC20 style transfers we can store user balance in the leaf of merkel tree. Let's find out more!
-![[img/Pasted image 20220816101103.png]]
+![img1](img/Pasted image 20220816101103.png)
 
 ### Account format
 Each account is represented by a single leaf in the accounts tree. It is calculated by hashing the following components in the following order:
@@ -193,7 +193,7 @@ class Account = {
 } 
 ```
 
-![[img/Pasted image 20220816101453.png]]
+![img2](img/Pasted image 20220816101453.png)
 
 ### Transaction 
 For each SNARK, we construct a Transactions Merkle tree, whose leaves are the transactions processed by the SNARK.
@@ -223,8 +223,8 @@ class Transaction = {
 	- Replacing this empty_node with the deposit_root.
 	- Using the same Merkle proof to calculate the new account_root.
 
-![[img/Pasted image 20220816103629.png]]
-![[img/Pasted image 20220816103641.png]]
+![img3](img/Pasted image 20220816103629.png)
+![img4](img/Pasted image 20220816103641.png)
 
 ### Withdraw from rollup
 - Withdrawing is like a normal transfer state transition. For withdraw users just have to send their tokens to `zero_address` which is like burning address for our chain. Tokens can only be received at this address.
