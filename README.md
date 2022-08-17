@@ -63,18 +63,25 @@
 ``` 
   Generate inputs:
   `node generate_input`
+  
   Compile circuit:
   `circom circuit.circom --wasm --r1cs --json`
+  
   Setup parameter:
   `zkutil setup`
+  
   Calculate witness:
   `snarkjs calculatewitness`
+  
   Generate proof:
   `zkutil prove`
+  
   Verify the proof:
   `zkutil verify`
+  
   Generate on-chain verifier:
   `zkutil generate-verifier`
+  
 ## 3. Verify a Merkle tree of accounts 
   Merkle tree is the data structure which is used on blockchain to store data, including accounts, transactions,etc. In this part, we will write a circuit to verify if an accounts was included in a Merkle tree or not. 
   
