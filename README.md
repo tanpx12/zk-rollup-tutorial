@@ -8,7 +8,7 @@
   * `snarkjs` 
 - After install these tools, run `npm install` to install the library that we use in this tutorial ( make sure that you have `nodejs` installed ).  
 - We also assume that you have some basic knowledge about zero knowledge and cryptography. If you don't, check out these articles about zero knowledge:  
-![zero knowledge](https://techfi.tech/zksnark-zero-knowledge-succinct-non-interactive-arguments-of-knowledge-2/)
+ https://techfi.tech/zksnark-zero-knowledge-succinct-non-interactive-arguments-of-knowledge-2
 
 ## 1. Verify a simple circuit  
   In case you forgot a little bit about `circom` and what is it for, this example will remind you about that and also show you how to combine `zkutil`, `circom` and `snarkjs` to create a circuit and verify it. If you already familiar with `circom`, `snarkjs` and `zkutil` then you can skip this part.
