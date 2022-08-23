@@ -3,7 +3,7 @@
 
 ## Prerequire:
 - In order to run this tutorial, you need to install these following tools:
-  * `zkutil` 
+  * [`zkutil`](github.com/tanpx12/zkutil) 
   * `circom`
   * `snarkjs` 
 - After install these tools, run `npm install` to install the library that we use in this tutorial ( make sure that you have `nodejs` installed ).  
